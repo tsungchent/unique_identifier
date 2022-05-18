@@ -24,6 +24,7 @@ set(LIBS ${ament_cmake_LIBRARIES} ${rclcpp_LIBRARIES} ${uuid_msgs_LIBRARIES}
   ${rclpy_LIBRARIES})
 
 find_package(Boost REQUIRED)
+include_directories(${Boost_INCLUDE_DIR})
 
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION include/${PROJECT_NAME})
